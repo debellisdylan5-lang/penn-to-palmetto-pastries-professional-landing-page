@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/penn-to-palmetto-pastries-professional-landing-page/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <meta name="robots" content="index, follow">
+  
+  
+  
+  <meta name="theme-color" content="#30261f">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+
+<!-- SEO Meta Tags -->
+<title>Penn to Palmetto Pastries | Bluffton, SC</title>
+<meta name="description" content="Hand-crafted cheesecakes and Pennsylvania Dutch favorites from Penn to Palmetto Pastries in Bluffton, South Carolina." />
+<meta name="keywords" content="Bluffton cheesecakes" />
+<meta property="og:title" content="Penn to Palmetto Pastries | Bluffton, SC" />
+<meta property="og:description" content="Hand-crafted cheesecakes and Pennsylvania Dutch favorites from Penn to Palmetto Pastries in Bluffton, South Carolina." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Penn to Palmetto Pastries | Bluffton, SC" />
+<meta name="twitter:description" content="Hand-crafted cheesecakes and Pennsylvania Dutch favorites from Penn to Palmetto Pastries in Bluffton, South Carolina." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mtm89l9w-15z3w";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=6862');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='xHmUnPwD';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='xHmUnPwD';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="overflow-x-hidden antialiased">
+
+  <!-- ============================================================================ -->
+  <!-- NAVBAR: Primary navigation and links to the two supplied official sources     -->
+  <!-- ============================================================================ -->
+  <nav data-section="navbar" class="border-b border-[#30261f]/10 bg-[#fffdf9]/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-12">
+      <a href="#top" class="min-w-0 font-display text-lg font-semibold leading-tight sm:text-xl" aria-label="Penn to Palmetto Pastries home">
+        Penn to Palmetto
+        <span class="block font-sans text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-[#a45e43]">Pastries</span>
+      </a>
+
+      <div class="hidden items-center gap-7 text-sm font-medium md:flex">
+        <a href="#featured-flavors" class="transition-colors hover:text-[#a45e43]">Featured flavors</a>
+        <a href="#from-the-bakery" class="transition-colors hover:text-[#a45e43]">Gallery</a>
+        <a href="#beyond-cheesecake" class="transition-colors hover:text-[#a45e43]">Beyond cheesecake</a>
+        <a href="#order" class="transition-colors hover:text-[#a45e43]">How ordering works</a>
+      </div>
+
+      <a href="https://bakesy.shop/b/penn-to-palmetto-pastries?fbclid=IwdGRjcAUG8d5wZG9mBWZkaWQWUNxf4smXohRvz8jCYKqo7f907DV092V4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5UtDKx82OAZrcbOZN_h81l6dSzxNBQHuKGT-LDA02w92azs93hIrbezBXwTg_aem_yJOOL1I20uTzba7e6K3bug"
+         target="_blank" rel="noopener noreferrer"
+         class="shrink-0 rounded-full bg-[#30261f] px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-[#a45e43] sm:px-5 sm:text-sm">
+        Order Online
+      </a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- ========================================================================== -->
+    <!-- HERO: Concise brand introduction with direct access to the official shop    -->
+    <!-- Notes: The art panel is intentionally an image slot, not a synthetic photo  -->
+    <!-- ========================================================================== -->
+    <section data-section="hero" class="relative overflow-hidden bg-[#f8f3ea]">
+      <div class="absolute inset-0 grain opacity-25" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-[1.02fr_.98fr] md:py-20 lg:gap-16 lg:px-12 lg:py-24">
+        <div class="max-w-2xl">
+          <p class="eyebrow mb-5 text-xs font-semibold uppercase text-[#a45e43]">Bluffton, South Carolina</p>
+          <h1 class="font-display text-[2.7rem] font-medium leading-[.98] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+            Penn to<br>
+            <span class="italic text-[#a45e43]">Palmetto</span> Pastries
+          </h1>
+          <p class="mt-6 max-w-xl text-base leading-7 text-[#30261f]/72 sm:text-lg sm:leading-8">
+            Hand-crafted cheesecakes and Pennsylvania Dutch favorites, available through local farmers markets and online ordering.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="https://bakesy.shop/b/penn-to-palmetto-pastries?fbclid=IwdGRjcAUG8d5wZG9mBWZkaWQWUNxf4smXohRvz8jCYKqo7f907DV092V4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5UtDKx82OAZrcbOZN_h81l6dSzxNBQHuKGT-LDA02w92azs93hIrbezBXwTg_aem_yJOOL1I20uTzba7e6K3bug"
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#a45e43] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#874832]">
+              Order Online <span class="button-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#featured-flavors" class="inline-flex min-h-12 items-center justify-center rounded-full border border-[#30261f]/25 px-7 py-3 text-sm font-semibold transition hover:border-[#30261f] hover:bg-white">
+              See Featured Flavors
+            </a>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-xl">
+          <div class="overflow-hidden rounded-t-[8rem] rounded-b-[1.5rem] shadow-[0_30px_80px_rgba(48,38,31,.18)]">
+            <img src="https://paymegpt.com/objects/generated-images/1257/1788482589605-0e95240dd63ca191.png" alt="Artisan crafted cheesecake from Penn to Palmetto Pastries" class="editorial-image aspect-[4/5]" loading="eager" decoding="async">
+          </div>
+          <div class="absolute -bottom-5 -left-2 max-w-[15rem] rounded-xl bg-[#fffdf9] p-4 shadow-xl sm:-left-6 sm:p-5">
+            <p class="font-display text-lg italic">Current featured cheesecakes</p>
+            <p class="mt-1 text-xs leading-5 text-[#30261f]/65">Browse Bakesy for the request order workflow and current availability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- CURRENT MENU: Avoids duplicating potentially changing product information   -->
+    <!-- ========================================================================== -->
+    <section data-section="menu" id="featured-flavors" class="bg-[#fffdf9] px-4 py-16 sm:px-6 sm:py-20 lg:px-12 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:gap-16">
+          <div data-aos="fade-up">
+            <p class="eyebrow text-xs font-semibold uppercase text-[#a45e43]">Featured on Bakesy</p>
+            <h2 class="mt-4 font-display text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">Current featured cheesecakes.</h2>
+            <p class="mt-5 max-w-xl leading-7 text-[#30261f]/70">These verified Bakesy items are presented as featured selections, not a complete menu.</p>
+          </div>
+
+          <div class="overflow-hidden rounded-[2rem]">
+            <img src="https://paymegpt.com/objects/generated-images/1257/1788482648214-5615c5bbea49c1fc.png" alt="Assortment of featured cheesecakes on display" class="editorial-image aspect-[16/10]" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+          <div data-aos="fade-up" class="rounded-2xl border border-[#30261f]/12 bg-[#f8f3ea] p-5">
+            <p class="text-lg font-semibold">Banana Pudding Cheesecake</p><p class="mt-1 text-sm text-[#30261f]/65">$55</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100" class="rounded-2xl border border-[#30261f]/12 bg-[#f8f3ea] p-5">
+            <p class="text-lg font-semibold">Pecan Pie Cheesecake</p><p class="mt-1 text-sm text-[#30261f]/65">$55</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="rounded-2xl border border-[#30261f]/12 bg-[#f8f3ea] p-5">
+            <p class="text-lg font-semibold">Pumpkin Cheesecake 9in</p><p class="mt-1 text-sm text-[#30261f]/65">$55</p>
+          </div>
+          <div data-aos="fade-up" class="rounded-2xl border border-[#30261f]/12 bg-[#f8f3ea] p-5">
+            <p class="text-lg font-semibold">Keylime Cheesecake 9in</p><p class="mt-1 text-sm text-[#30261f]/65">$55</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100" class="rounded-2xl border border-[#30261f]/12 bg-[#f8f3ea] p-5">
+            <p class="text-lg font-semibold">Lemon Blueberry Cheesecake 9in</p><p class="mt-1 text-sm text-[#30261f]/65">$55</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="rounded-2xl border border-[#30261f]/12 bg-[#f8f3ea] p-5">
+            <p class="text-lg font-semibold">Strawberry Shortcake Cheesecake 9in</p><p class="mt-1 text-sm text-[#30261f]/65">$55</p>
+          </div>
+          <div data-aos="fade-up" class="rounded-2xl border border-[#30261f]/12 bg-[#f8f3ea] p-5 md:col-span-2 xl:col-span-1">
+            <p class="text-lg font-semibold">Peach Crumble Cheesecake</p><p class="mt-1 text-sm text-[#30261f]/65">$60</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- FROM THE BAKERY: Editorial gallery of verified example items                -->
+    <!-- Notes: This is not a complete menu; it is a closer look at bakery case      -->
+    <!-- ========================================================================== -->
+    <section data-section="gallery" id="from-the-bakery" class="px-4 py-16 sm:px-6 sm:py-20 lg:px-12 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-2xl" data-aos="fade-up">
+          <p class="eyebrow text-xs font-semibold uppercase text-[#a45e43]">From the Bakery</p>
+          <h2 class="mt-4 font-display text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">A closer look at the bakery case.</h2>
+          <p class="mt-5 max-w-xl leading-7 text-[#30261f]/70">A closer look at some of the cheesecakes, cookies, and custom assortments that inspire Penn to Palmetto’s bakery case.</p>
+        </div>
+
+        <div class="mt-10 lg:hidden">
+          <div class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 [-webkit-overflow-scrolling:touch]">
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/76297f6f16a2021b.jpg" alt="Pecan Pie Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="eager" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Pecan Pie Cheesecake</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Creamy cheesecake topped with glossy caramel and toasted pecans.</p>
+              </div>
+            </article>
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up" data-aos-delay="100">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/1851b31eb7810a25.jpg" alt="Peach Crumble Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="eager" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Peach Crumble Cheesecake</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A golden cheesecake finished with glazed peaches and buttery crumble.</p>
+              </div>
+            </article>
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up" data-aos-delay="200">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/fa09c887b7aa7dca.jpg" alt="Cheesecake with Red Crumb Topping" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Cheesecake with Red Crumb Topping</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A creamy layered cheesecake finished with piped whipped topping and rich red cake crumbs.</p>
+              </div>
+            </article>
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up" data-aos-delay="300">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/cb8f8f01928c46ae.jpg" alt="Peanut Butter Blossoms" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Peanut Butter Blossoms</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Sugar-coated peanut butter cookies finished with a chocolate center.</p>
+              </div>
+            </article>
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up" data-aos-delay="400">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/b2bc463b26dbe239.jpg" alt="Powdered Sugar Cookies" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Powdered Sugar Cookies</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Tender round cookies generously dusted with powdered sugar.</p>
+              </div>
+            </article>
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up" data-aos-delay="500">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/283e3520465472e3.jpg" alt="Caramel Pecan Chocolate Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Caramel Pecan Chocolate Cheesecake</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Cheesecake layered with glossy chocolate, chopped pecans, and caramel drizzle.</p>
+              </div>
+            </article>
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up" data-aos-delay="600">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/24a05ce1694f183e.jpg" alt="Mini Dessert Assortment" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Mini Dessert Assortment</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A custom bakery box filled with an assortment of individually finished mini desserts.</p>
+              </div>
+            </article>
+            <article class="min-w-[82%] snap-start overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] sm:min-w-[68%]" data-aos="fade-up" data-aos-delay="700">
+              <div class="overflow-hidden">
+                <img src="https://paymegpt.com/objects/quick-uploads/1257/fe0bb2372e714161.jpg" alt="Peanut Butter Cup Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+              </div>
+              <div class="p-5">
+                <h3 class="font-display text-2xl">Peanut Butter Cup Cheesecake</h3>
+                <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A chocolate-topped cheesecake finished with peanut butter cup pieces and a dark cookie crust.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hidden lg:grid lg:grid-cols-12 lg:gap-5 lg:items-start mt-10">
+          <article class="col-span-7 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9]" data-aos="fade-up">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/76297f6f16a2021b.jpg" alt="Pecan Pie Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="eager" decoding="async">
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-2xl">Pecan Pie Cheesecake</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Creamy cheesecake topped with glossy caramel and toasted pecans.</p>
+            </div>
+          </article>
+          <article class="col-span-5 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] lg:mt-16" data-aos="fade-up" data-aos-delay="100">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/1851b31eb7810a25.jpg" alt="Peach Crumble Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="eager" decoding="async">
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-2xl">Peach Crumble Cheesecake</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A golden cheesecake finished with glazed peaches and buttery crumble.</p>
+            </div>
+          </article>
+
+          <article class="col-span-4 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9]" data-aos="fade-up">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/fa09c887b7aa7dca.jpg" alt="Cheesecake with Red Crumb Topping" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-xl">Cheesecake with Red Crumb Topping</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A creamy layered cheesecake finished with piped whipped topping and rich red cake crumbs.</p>
+            </div>
+          </article>
+          <article class="col-span-4 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] lg:mt-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/cb8f8f01928c46ae.jpg" alt="Peanut Butter Blossoms" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-xl">Peanut Butter Blossoms</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Sugar-coated peanut butter cookies finished with a chocolate center.</p>
+            </div>
+          </article>
+          <article class="col-span-4 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9]" data-aos="fade-up" data-aos-delay="200">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/b2bc463b26dbe239.jpg" alt="Powdered Sugar Cookies" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-xl">Powdered Sugar Cookies</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Tender round cookies generously dusted with powdered sugar.</p>
+            </div>
+          </article>
+
+          <article class="col-span-4 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] lg:mt-10" data-aos="fade-up">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/283e3520465472e3.jpg" alt="Caramel Pecan Chocolate Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-xl">Caramel Pecan Chocolate Cheesecake</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">Cheesecake layered with glossy chocolate, chopped pecans, and caramel drizzle.</p>
+            </div>
+          </article>
+          <article class="col-span-4 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9]" data-aos="fade-up" data-aos-delay="100">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/24a05ce1694f183e.jpg" alt="Mini Dessert Assortment" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-xl">Mini Dessert Assortment</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A custom bakery box filled with an assortment of individually finished mini desserts.</p>
+            </div>
+          </article>
+          <article class="col-span-4 overflow-hidden rounded-[2rem] border border-[#30261f]/12 bg-[#fffdf9] lg:mt-10" data-aos="fade-up" data-aos-delay="200">
+            <div class="overflow-hidden">
+              <img src="https://paymegpt.com/objects/quick-uploads/1257/fe0bb2372e714161.jpg" alt="Peanut Butter Cup Cheesecake" class="editorial-image aspect-[4/5] transition-transform duration-500 hover:scale-[1.03]" loading="lazy" decoding="async">
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-xl">Peanut Butter Cup Cheesecake</h3>
+              <p class="mt-2 text-sm leading-6 text-[#30261f]/70">A chocolate-topped cheesecake finished with peanut butter cup pieces and a dark cookie crust.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- BEYOND CHEESECAKE: Verified Pennsylvania Dutch favorites                    -->
+    <!-- ========================================================================== -->
+    <section data-section="beyond-cheesecake" id="beyond-cheesecake" class="bg-[#f8f3ea] px-4 py-16 sm:px-6 sm:py-20 lg:px-12 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:gap-16">
+          <div data-aos="fade-up">
+            <p class="eyebrow text-xs font-semibold uppercase text-[#a45e43]">Beyond cheesecake</p>
+            <h2 class="mt-4 font-display text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">Pennsylvania Dutch favorites.</h2>
+            <p class="mt-5 max-w-xl leading-7 text-[#30261f]/70">Verified specialties include Whoopie Pies, Apple Dumplings, Tandycake, Funny Cake, and Shoofly Pie.</p>
+          </div>
+
+          <div class="overflow-hidden rounded-[2rem]" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://paymegpt.com/objects/generated-images/1257/1788482617984-6d2af254dcc10df2.png" alt="Assorted Pennsylvania Dutch favorites from Penn to Palmetto Pastries" class="editorial-image aspect-[16/11]" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+          <div data-aos="fade-up" class="rounded-2xl border border-[#30261f]/12 bg-[#fffdf9] p-5">
+            <p class="text-lg font-semibold">Whoopie Pies</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100" class="rounded-2xl border border-[#30261f]/12 bg-[#fffdf9] p-5">
+            <p class="text-lg font-semibold">Apple Dumplings</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="rounded-2xl border border-[#30261f]/12 bg-[#fffdf9] p-5">
+            <p class="text-lg font-semibold">Tandycake</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300" class="rounded-2xl border border-[#30261f]/12 bg-[#fffdf9] p-5">
+            <p class="text-lg font-semibold">Funny Cake</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="400" class="rounded-2xl border border-[#30261f]/12 bg-[#fffdf9] p-5">
+            <p class="text-lg font-semibold">Shoofly Pie</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- HOW TO ORDER: Simple workflow limited to verifiable online-shop behavior     -->
+    <!-- ========================================================================== -->
+    <section data-section="how-to-order" id="order" class="bg-[#30261f] px-4 py-16 text-[#fffdf9] sm:px-6 sm:py-20 lg:px-12 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-2xl" data-aos="fade-up">
+          <p class="eyebrow text-xs font-semibold uppercase text-[#d9a287]">How ordering works</p>
+          <h2 class="mt-4 font-display text-4xl tracking-[-0.03em] sm:text-5xl">Simple, clear, and request-based.</h2>
+        </div>
+
+        <ol class="mt-12 grid gap-4 md:grid-cols-4">
+          <li data-aos="fade-up" class="rounded-2xl border border-white/15 p-6 sm:p-7">
+            <span class="font-display text-3xl italic text-[#d9a287]">01</span>
+            <h3 class="mt-8 text-lg font-semibold">Browse featured items</h3>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="100" class="rounded-2xl border border-white/15 p-6 sm:p-7">
+            <span class="font-display text-3xl italic text-[#d9a287]">02</span>
+            <h3 class="mt-8 text-lg font-semibold">Request order on Bakesy</h3>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="200" class="rounded-2xl border border-white/15 p-6 sm:p-7">
+            <span class="font-display text-3xl italic text-[#d9a287]">03</span>
+            <h3 class="mt-8 text-lg font-semibold">Typical lead time 3 days</h3>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300" class="rounded-2xl border border-white/15 p-6 sm:p-7">
+            <span class="font-display text-3xl italic text-[#d9a287]">04</span>
+            <h3 class="mt-8 text-lg font-semibold">Typical deposit 50%</h3>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- FINAL CTA: Repeats the principal conversion action and verified social link  -->
+    <!-- ========================================================================== -->
+    <section data-section="cta" class="px-4 pb-6 sm:px-6 sm:pb-8 lg:px-12">
+      <div data-aos="zoom-in" class="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#a45e43] px-6 py-14 text-center text-white sm:px-12 sm:py-20">
+        <p class="eyebrow text-xs font-semibold uppercase text-white/75">Penn to Palmetto Pastries</p>
+        <h2 class="mx-auto mt-4 max-w-3xl font-display text-4xl leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
+          Bluffton cheesecakes, Pennsylvania Dutch favorites, and seasonal featured flavors.
+        </h2>
+        <p class="mx-auto mt-5 max-w-xl leading-7 text-white/80">Browse Bakesy for featured items, then submit a request order when you’re ready.</p>
+        <a href="https://bakesy.shop/b/penn-to-palmetto-pastries?fbclid=IwdGRjcAUG8d5wZG9mBWZkaWQWUNxf4smXohRvz8jCYKqo7f907DV092V4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5UtDKx82OAZrcbOZN_h81l6dSzxNBQHuKGT-LDA02w92azs93hIrbezBXwTg_aem_yJOOL1I20uTzba7e6K3bug"
+           target="_blank" rel="noopener noreferrer"
+           class="mt-8 inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-white px-8 py-3 text-sm font-semibold text-[#30261f] transition hover:bg-[#f8f3ea]">
+          Order Online <span class="button-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Compact source links without unverified contact or location details   -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="px-4 py-10 sm:px-6 lg:px-12">
+    <div class="mx-auto flex max-w-7xl flex-col gap-7 border-t border-[#30261f]/12 pt-8">
+      <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div>
+          <p class="font-display text-xl font-semibold">Penn to Palmetto Pastries</p>
+          <p class="mt-2 max-w-2xl text-sm leading-6 text-[#30261f]/65">Fiona Cruz serves Bluffton-area customers with hand-crafted cheesecakes and Pennsylvania Dutch treats through local farmers markets and online ordering.</p>
+        </div>
+        <div class="grid gap-2 text-sm font-semibold sm:grid-cols-2 lg:grid-cols-1">
+          <a href="mailto:penn.topalmettopastries@gmail.com" class="break-words hover:text-[#a45e43]">penn.topalmettopastries@gmail.com</a>
+          <a href="tel:4843473889" class="hover:text-[#a45e43]">484-347-3889</a>
+          <a href="https://www.instagram.com/penn.topalmettopastries/" target="_blank" rel="noopener noreferrer" class="break-words hover:text-[#a45e43]">Instagram</a>
+          <a href="https://www.facebook.com/share/1BPoAaGhrn/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="break-words hover:text-[#a45e43]">Facebook</a>
+          <a href="https://bakesy.shop/b/penn-to-palmetto-pastries?fbclid=IwdGRjcAUG8d5wZG9mBWZkaWQWUNxf4smXohRvz8jCYKqo7f907DV092V4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5UtDKx82OAZrcbOZN_h81l6dSzxNBQHuKGT-LDA02w92azs93hIrbezBXwTg_aem_yJOOL1I20uTzba7e6K3bug" target="_blank" rel="noopener noreferrer" class="break-words hover:text-[#a45e43]">Order on Bakesy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
