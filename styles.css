@@ -1,0 +1,50 @@
+/* ===== EDITORIAL TYPE & COLOR SYSTEM ===== */
+    /* The palette is intentionally restrained so authentic bakery photography can be added later. */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+    :root {
+      --ink: #30261f;
+      --cream: #f8f3ea;
+      --paper: #fffdf9;
+      --clay: #a45e43;
+      --sage: #6f765e;
+      --line: rgba(48, 38, 31, 0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+    }
+    .font-display { font-family: "Playfair Display", serif; }
+    .eyebrow { letter-spacing: 0.18em; }
+
+    /* ===== ACCESSIBLE INTERACTION ===== */
+    a, button { -webkit-tap-highlight-color: transparent; }
+    :focus-visible {
+      outline: 3px solid rgba(164, 94, 67, 0.42);
+      outline-offset: 4px;
+      border-radius: 0.25rem;
+    }
+
+    /* ===== IMAGE TREATMENT ===== */
+    .editorial-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #e7dac7;
+    }
+
+    /* ===== SUBTLE DECORATIVE TEXTURE ===== */
+    .grain {
+      background-image: radial-gradient(rgba(48,38,31,.12) .6px, transparent .6px);
+      background-size: 9px 9px;
+    }
+    .button-arrow { transition: transform .25s ease; }
+    a:hover .button-arrow { transform: translateX(4px); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
