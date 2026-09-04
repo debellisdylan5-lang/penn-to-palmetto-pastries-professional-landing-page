@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://debellisdylan5-lang.github.io/penn-to-palmetto-pastries-professional-landing-page/sitemap.xml
